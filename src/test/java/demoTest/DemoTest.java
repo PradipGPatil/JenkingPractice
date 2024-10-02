@@ -1,19 +1,18 @@
-package demo;
+package demoTest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Sample {
+public class DemoTest {
 
-
-	@Test
-	public void visitBrowserTest() {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
+		System.out.println("added console log");
 
 	}
 
